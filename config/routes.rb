@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :bulletins do
+    resources :posts
+  end
+
   #get 'welcome/index'
   
   # The priority is based upon order of creation: first created -> highest priority.

@@ -71,4 +71,5 @@ class BulletinsController < ApplicationController
     def bulletin_params
       params.require(:bulletin).permit(:title, :description, :post_type)
     end
+
 end
